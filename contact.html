@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="us-eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" id="logo">Greg Zahora</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Contact</h1>
+
+            <form action="contact.php">
+
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Casey" required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" placeholder="Doe" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="abcd123@email.com" required>
+
+                <label for="phnmbr">Phone Number:</label>
+                <input type="tel" id="phnnmbr" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555"
+                    required>
+
+                </br> </br>
+
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="message" placeholder="Write message here" style="height:200px" required></textarea>
+
+                <input type="Submit" value="Submit">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; Copyright 2019 Greg Zahora
+        </div>
+    </footer>
+</body>
+
+</html>
